@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import { Header } from "semantic-ui-react";
+import "./App.css";
 
-function App() {
+// components
+import Navbar from "./components/Navbar";
+import Date from "./components/Date";
+
+// pages
+import Home from "./pages/Home";
+import Hours from "./pages/Hours";
+import Ephemeris from "./pages/Ephemeris";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header as="h1" textAlign="center">
+        <Date />
+      </Header>
+      <div className="ui container">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/hours" element={<Hours />} />
+          <Route path="/ephemeris" element={<Ephemeris />} />
+        </Routes>
+      </div>
     </div>
   );
 }
-
-export default App;
