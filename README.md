@@ -17,11 +17,11 @@ I built this project in a weekend on a whim. This app provides the day's astrono
 
 ## Setup/Installation Requirements
 
-- Clone the repo: https://github.com/phil-curran/astro-page
-- Install dependencies from root directory: npm install
-- Install Python packages from root directory: python pip install requests bs4 datetime flask json
-- Populate the database: python3 data.py
-- Run the app: npm start
+- Clone the repo: `git clone https://github.com/phil-curran/astro-page`
+- Install dependencies from root directory: `npm install`
+- Install Python packages from root directory: `python pip install requests bs4 datetime flask json`
+- Populate the database: `python3 data.py`
+- Run the app: `npm start`
 
 ## Screenshots
 
