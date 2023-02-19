@@ -48,4 +48,4 @@ Please contact me if you have issues, questions, or ideas:
 
 MIT
 
-Copyright (c) 2022 Phil Curran, Chris DePastene, Chris Nakayama, Ebru Rice, Jack Skelton
+Copyright (c) 202 Phil Curran
