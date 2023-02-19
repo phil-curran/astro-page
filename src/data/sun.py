@@ -20,12 +20,12 @@ tr = tbody.find_all('tr')
 sunrise = tr[5].find('td').text.strip().split(' ')
 sunset = tr[6].find('td').text.strip().split(' ')
 
-time1String = f'{sunrise[0]}am'
-time2String = f'{sunset[0]}pm'
+time1String = f'{sunrise[0]} am'
+time2String = f'{sunset[0]} pm'
 
 # Define the two times
-time1 = datetime.strptime(time1String, '%I:%M%p')
-time2 = datetime.strptime(time2String, '%I:%M%p')
+time1 = datetime.strptime(time1String, '%I:%M %p')
+time2 = datetime.strptime(time2String, '%I:%M %p')
 
 # Convert the times to minutes since midnight
 minutes1 = time1.hour * 60 + time1.minute
@@ -39,11 +39,11 @@ hours = average_minutes // 60
 minutes = average_minutes % 60
 
 sunData.append({
-    'solarMidnight': f'{hours}:{minutes:02d}am',
-    'sunriseTime': f'{sunrise[0]}am',
+    'solarMidnight': f'{hours}:{minutes:02d} am',
+    'sunriseTime': f'{sunrise[0]} am',
     'sunriseDirection': f'{sunrise[2]} {sunrise[3]}',
-    'solarNoon': f'{hours}:{minutes:02d}pm',
-    'sunsetTime': f'{sunset[0]}pm',
+    'solarNoon': f'{hours}:{minutes:02d} pm',
+    'sunsetTime': f'{sunset[0]} pm',
     'sunsetDirection': f'{sunset[2]} {sunset[3]}'
 })
 
