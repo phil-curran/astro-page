@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Segment, Table } from "semantic-ui-react";
 
 import data from "../data/ephemeris.json";
+import Symbol from "../components/Symbol";
 
 export default function Ephemeris() {
   let planets = [
@@ -45,9 +46,15 @@ export default function Ephemeris() {
             if (planets.includes(item.planet)) {
               return (
                 <Table.Row key={index}>
-                  <Table.Cell>{item.planet}</Table.Cell>
+                  <Table.Cell>
+                    <Symbol props={item.planet} />
+                    {item.planet}
+                  </Table.Cell>
                   <Table.Cell>{item.degree}</Table.Cell>
-                  <Table.Cell>{item.sign}</Table.Cell>
+                  <Table.Cell>
+                    <Symbol props={item.sign} />
+                    {item.sign}
+                  </Table.Cell>
                   <Table.Cell>
                     {item.seconds[3]} {item.seconds[4]}
                   </Table.Cell>

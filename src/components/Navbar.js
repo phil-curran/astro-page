@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Menu, Segment } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-import "./style.css";
+import "./styles/navbar.css";
 
 export default class Navbar extends Component {
-  state = { activeItem: "home" };
+  state = { activeItem: "Sun and Moon Times" };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
@@ -18,7 +18,7 @@ export default class Navbar extends Component {
           <div className="ui container">
             <Menu.Item
               as={Link}
-              to="/home"
+              to="/"
               name="Sun and Moon Times"
               active={activeItem === "Sun and Moon Times"}
               onClick={this.handleItemClick}

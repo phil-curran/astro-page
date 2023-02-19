@@ -1,0 +1,124 @@
+:root {
+  --timeline: #2f3640;
+  --daytimeSun: #f1c40f;
+  --nighttimeSun: #c8b45b;
+  --daytimeMoon: #7c2dc2;
+  --nighttimeMoon: #524674;
+  --full-circle: 50px;
+  --half-circle: 25px;
+  --noon: -65px;
+  --rise: -36px;
+  --set: -4px;
+  --midnights: 0px;
+}
+
+.timeline {
+  display: block;
+  position: relative;
+  top: 30px;
+  height: 2px;
+  background-color: var(--timeline);
+  border-radius: 8px;
+  width: 72.5%;
+}
+
+.midnightStart,
+.moonRise,
+.sunRise,
+.solarNoon,
+.lunarNoon,
+.sunSet,
+.moonSet,
+.midnightEnd,
+.lunarMidnight {
+  display: inline-block;
+  position: relative;
+}
+
+.sunRise,
+.solarNoon,
+.sunSet {
+  background-color: var(--daytimeSun);
+}
+
+.moonRise,
+.lunarNoon,
+.moonSet {
+  background-color: var(--daytimeMoon);
+}
+
+.midnightStart,
+.midnightEnd {
+  background-color: var(--nighttimeSun);
+}
+
+.midnightStart,
+.solarNoon,
+.lunarNoon,
+.midnightEnd,
+.lunarMidnight {
+  width: var(--full-circle);
+  height: var(--full-circle);
+  border-radius: 50%;
+}
+
+.moonRise,
+.sunRise,
+.moonSet,
+.sunSet {
+  width: var(--full-circle);
+  height: var(--half-circle);
+}
+
+.moonRise,
+.sunRise {
+  border-top-left-radius: var(--full-circle);
+  border-top-right-radius: var(--full-circle);
+  top: var(--rise);
+}
+
+.moonSet,
+.sunSet {
+  border-bottom-left-radius: var(--full-circle);
+  border-bottom-right-radius: var(--full-circle);
+  top: var(--set);
+}
+
+.solarNoon,
+.lunarNoon {
+  top: var(--noon);
+}
+
+.midnightStart,
+.midnightEnd,
+.lunarMidnight {
+  top: var(--midnights);
+}
+
+.midnightStart {
+}
+
+.moonRise {
+}
+
+.sunRise {
+}
+
+.solarNoon {
+}
+
+.lunarNoon {
+}
+
+.sunSet {
+}
+
+.moonSet {
+}
+
+.midnightEnd {
+}
+
+.lunarMidnight {
+  background-color: var(--nighttimeMoon);
+}

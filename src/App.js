@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Header } from "semantic-ui-react";
-import "./App.css";
+import "semantic-ui-css/semantic.min.css";
 
 // components
 import Navbar from "./components/Navbar";
@@ -20,7 +20,7 @@ export default function App() {
       </Header>
       <div className="ui container">
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/hours" element={<Hours />} />
           <Route path="/ephemeris" element={<Ephemeris />} />
         </Routes>

@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Hermetica";
+  src: url("./fonts/Hermetica.eot");
+  src: url("./fonts/Hermetica.eot") format("embedded-opentype"),
+    url("./fonts/Hermetica.ttf") format("truetype"),
+    url("./fonts/Hermetica.woff") format("woff"),
+    url("./fonts/Hermetica.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+span {
+  font-family: "Hermetica" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sun:before {
+  content: "\ebcf";
+  color: #fedd00;
+}
+.moon:before {
+  content: "\ebd0";
+  color: #5c00cc;
+}
+.mercury:before {
+  content: "\ebd1";
+  color: #ff6d00;
+}
+.venus:before {
+  content: "\ebd2";
+  color: #00a550;
+}
+.earth:before {
+  content: "\ebd3";
+}
+.mars:before {
+  content: "\ebd4";
+  color: #f2301b;
+}
+.jupiter:before {
+  content: "\ebd5";
+  color: #0085ca;
+}
+.saturn:before {
+  content: "\ebd6";
+  color: #000000;
+}
+.uranus:before {
+  content: "\ebd7";
+  color: #3498db;
+}
+.neptune:before {
+  content: "\ebd9";
+  color: #8e44ad;
+}
+.pluto:before {
+  content: "\ebda";
+  color: #f1c40f;
+}
+.ceres:before {
+  content: "\ebdd";
+}
+.chiron:before {
+  content: "\ebde";
+}
+.lilith:before {
+  content: "\ebe0";
+}
+.moon_waxing_crescent:before {
+  content: "\ebe3";
+  color: #5c00cc;
+}
+.moon_waxing_half:before {
+  content: "\ebe4";
+  color: #5c00cc;
+}
+.moon_waxing_gibbous:before {
+  content: "\ebe5";
+  color: #5c00cc;
+}
+.moon_full:before {
+  content: "\ebe6";
+  color: #5c00cc;
+}
+.moon_waning_gibbous:before {
+  content: "\ebe7";
+  color: #5c00cc;
+}
+.moon_waning_half:before {
+  content: "\ebe8";
+  color: #5c00cc;
+}
+.moon_waning_crescent:before {
+  content: "\ebe9";
+  color: #5c00cc;
+}
+.moon_new:before {
+  content: "\ebea";
+  color: #5c00cc;
+}
+.aries:before {
+  content: "\ebeb";
+  color: #ed2800;
+}
+.taurus:before {
+  content: "\ebec";
+  color: #ff4e00;
+}
+.gemini:before {
+  content: "\ebed";
+  color: #ff6d00;
+}
+.cancer:before {
+  content: "\ebee";
+  color: #ffb734;
+}
+.-leo:before {
+  content: "\ebef";
+  color: #e5d708;
+}
+.virgo:before {
+  content: "\ebf0";
+  color: #59b934;
+}
+.libra:before {
+  content: "\ebf1";
+  color: #00a550;
+}
+.scorpio:before {
+  content: "\ebf2";
+  color: #00958d;
+}
+.sagittarius:before {
+  content: "\ebf3";
+  color: #0085ca;
+}
+.capricorn:before {
+  content: "\ebf4";
+  color: #001489;
+}
+.aquarius:before {
+  content: "\ebf5";
+  color: #5c00cc;
+}
+.pisces:before {
+  content: "\ebf6";
+  color: #ae0e36;
+}
+.north_node:before {
+  content: "\ebf7";
+}
+.south_node:before {
+  content: "\ebf8";
+}
+.part_of_fortune:before {
+  content: "\ebf9";
+}

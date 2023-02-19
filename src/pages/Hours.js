@@ -4,7 +4,7 @@ import { Header, Segment, Table } from "semantic-ui-react";
 import Symbol from "../components/Symbol";
 
 import hours from "../data/planetaryHours.json";
-import "./hours.css";
+import "../styles/hours.css";
 
 export default function Hours() {
   return (
@@ -43,21 +43,15 @@ export default function Hours() {
                 <Table.Row key={index}>
                   <Table.Cell>{item[0]}</Table.Cell>
                   <Table.Cell>
-                    <span>
-                      <Symbol props={item[1].split(" ")[0]} />{" "}
-                    </span>
-                    <span>{item[1].split(" ")[0]}</span>
+                    <Symbol props={item[1].split(" ")[0]} />
+                    {item[1].split(" ")[0]}
                   </Table.Cell>
-
                   <Table.Cell>{item[2]}</Table.Cell>
                   <Table.Cell>{item[3]}</Table.Cell>
-
                   <Table.Cell className="night">{item[5]}</Table.Cell>
                   <Table.Cell className="night">
-                    <span>
-                      <Symbol props={item[6].split(" ")[0]} />{" "}
-                    </span>
-                    <span>{item[6].split(" ")[0]}</span>
+                    <Symbol props={item[6].split(" ")[0]} />
+                    {item[6].split(" ")[0]}
                   </Table.Cell>
                   <Table.Cell className="night">{item[7]}</Table.Cell>
                   <Table.Cell className="night">{item[8]}</Table.Cell>

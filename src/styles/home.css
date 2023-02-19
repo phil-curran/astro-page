@@ -1,0 +1,27 @@
+.grid-container {
+  margin: 0 auto;
+  width: 82%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". . . . . . . .";
+}
+
+.grid-item {
+  height: 250px;
+  /*
+  width: 20px;
+  text-align: center; */
+}
+
+.grid-item p {
+  text-align: right;
+  margin-top: 3em;
+  /* white-space: nowrap; */
+  transform: rotate(-90deg);
+}
+.vertical-text {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}

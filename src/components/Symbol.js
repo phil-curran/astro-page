@@ -1,66 +1,67 @@
-import { Image } from "semantic-ui-react";
+import "./styles/hermetica.css";
+import "./styles/symbol.css";
 
 const Symbol = ({ props }) => {
-  const getSymbol = () => {
+  const getSymbol = (props) => {
     switch (props) {
       case "Aries":
-        return "src/imgs/south_node.svg";
+        return "aries";
       case "Taurus":
-        return "../imgs/taurus.svg";
+        return "taurus";
       case "Gemini":
-        return "../imgs/gemini.svg";
+        return "gemini";
       case "Cancer":
-        return "../imgs/cancer.svg";
+        return "cancer";
       case "Leo":
-        return "../imgs/leo.svg";
+        return "leo";
       case "Virgo":
-        return "../imgs/virgo.svg";
+        return "virgo";
       case "Libra":
-        return "../imgs/libra.svg";
+        return "libra";
       case "Scorpio":
-        return "../imgs/scorpoi.svg";
+        return "scorpio";
       case "Sagittarius":
-        return "../imgs/sagittarius.svg";
+        return "sagittarius";
       case "Capricorn":
-        return "../imgs/capricorn.svg";
+        return "capricorn";
       case "Aquarius":
-        return "../imgs/aquarius.svg";
+        return "aquarius";
       case "Pisces":
-        return "../imgs/pisces.svg";
+        return "pisces";
       case "Earth":
-        return "../imgs/earth.svg";
+        return "earth";
+      case "Moon":
+        return "moon";
       case "Sun":
-        return "../imgs/sun.svg";
+        return "sun";
       case "Mercury":
-        return "../imgs/mercury.svg";
+        return "mercury";
       case "Venus":
-        return "src/imgs/south_node.svg";
+        return "venus";
       case "Mars":
-        return "../imgs/mars.svg";
+        return "mars";
       case "Jupiter":
-        return "../imgs/jupiter.svg";
+        return "jupiter";
       case "Saturn":
-        return "../imgs/saturn.svg";
+        return "saturn";
       case "Uranus":
-        return "../imgs/uranus.svg";
+        return "uranus";
       case "Neptune":
-        return "../imgs/neptune.svg";
+        return "neptune";
       case "Pluto":
-        return "../imgs/pluto.svg";
+        return "pluto";
       case "Chiron":
-        return "../imgs/chiron.svg";
-      case "North Node":
-        return "../imgs/northNode.svg";
-      case "South Node":
-        return "../imgs/southNode.svg";
+        return "chiron";
+      case "NorthNode":
+        return "north_node";
+      case "SouthNode":
+        return "south_node";
       default:
         return null;
     }
   };
 
-  console.log("Symbol: ", getSymbol(props));
-
-  return <img className={props} src={getSymbol(props)} size="small" />;
+  return <span className={getSymbol(props)}></span>;
 };
 
 export default Symbol;
